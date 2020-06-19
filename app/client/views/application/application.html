@@ -38,10 +38,10 @@
             <label>Graduation Year</label>
             <select name="year" ng-model="user.profile.graduationYear">
               <option value="">Graduation Year</option>
-              <option value="2016">2020</option>
-              <option value="2017">2021</option>
-              <option value="2018">2022</option>
-              <option value="2019">2023</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
             </select>
           </div>
 
@@ -73,7 +73,7 @@
           </div>
 
           <div class="field" ng-hide="isMitStudent">
-            <p>
+            <!-- <p>
               Because of limitations imposed by MIT, we are not legally allowed to host non-MIT minors (those under 18) for
               QuantumHack 2020. Checking the box below affirms that you are or will be 18 years or older by September 19th, 2015.
             </p>
@@ -81,9 +81,9 @@
               <strong>
                 We will be checking ID. If you are a non-MIT minor, you will be turned away at the door.
               </strong>
-            </p>
-            <div class="ui checkbox">
-              <input type="checkbox" id="adult" ng-model="user.profile.adult" />
+            </p> -->
+            <div class="ui checkbox" ng-hide="true">
+              <input type="checkbox" id="adult" ng-model="user.profile.adult" value="true" />
               <label for="adult">I am 18 or older.</label>
             </div>
           </div>
