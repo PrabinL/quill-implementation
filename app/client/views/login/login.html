@@ -63,6 +63,11 @@
           </div>
         </div>
 
+        <div ng-hide="showLoginButton || loginState!=='login'" class="forgot">
+          <a href="#" ng-click="setLoginState('login')">
+            Login?
+          </a>
+        </div>
         <div class="ui divider"></div>
 
         <div ng-show="loginState === 'login'" class="forgot">

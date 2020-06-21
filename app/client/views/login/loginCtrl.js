@@ -38,6 +38,7 @@ angular.module("reg").controller("LoginCtrl", [
     };
 
     $scope.setLoginState = function (state) {
+      if (state === "login") $scope.showLoginButton = true;
       $scope.loginState = state;
     };
 
